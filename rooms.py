@@ -7,12 +7,15 @@ window.geometry("500x500")
 #window.resizable(0,0)
 
 uczestnicy = []
-
-
+#m=5
 def button_adding():
+        #n=m
         global uczestnicy
         uczestnicy.append(str(entry.get()) + '\n')
         label3.configure(text= uczestnicy)
+        #label4 = tk.Label( window, text = uczestnicy )
+        #label4.grid(row=n, column=0)
+        #n+=1
 
 def button_delating():
         global uczestnicy
